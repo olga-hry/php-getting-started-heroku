@@ -27,7 +27,7 @@ Hello
   <?php } ?>
 
   <?php if (!isset($_GET['submitted'])) { ?>
-  
+  <div style="border: red solid 5px">
   <h1>Play with the HTML form</h1>
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
@@ -70,6 +70,9 @@ Hello
     
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
+	  
+	  </div>
+	  
   </form>
 
   <?php } ?>
