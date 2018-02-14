@@ -13,11 +13,11 @@ Hello
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
   
   
-  <p>radio: <?php echo htmlspecialchars($_GET['article_name']); ?></p>
-  <p>radio: <?php echo htmlspecialchars($_GET['article_topic']); ?></p>
-  <p>radio: <?php echo htmlspecialchars($_GET['comment']); ?></p>
-  <p>radio: <?php echo htmlspecialchars($_GET['mytext']); ?></p>
-  <p>radio: <?php echo htmlspecialchars($_GET['color']); ?></p>
+  <p>article_name: <?php echo htmlspecialchars($_GET['article_name']); ?></p>
+  <p>article_topic: <?php echo htmlspecialchars($_GET['article_topic']); ?></p>
+  <p>comment: <?php echo htmlspecialchars($_GET['comment']); ?></p>
+  <p>mytext: <?php echo htmlspecialchars($_GET['mytext']); ?></p>
+  <p>color (<?php echo htmlspecialchars($_GET['color']);) : <span style="background-color: ($_GET['color'])">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>?></p>
   
   
   
