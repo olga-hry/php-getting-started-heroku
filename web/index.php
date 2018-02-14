@@ -8,6 +8,8 @@
 </head>
 <body>
 Hello
+	
+	<div style="border: red solid 5px; border-radius: <?php echo htmlspecialchars($_GET['weight']); ?>px; ">
   <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
@@ -16,6 +18,7 @@ Hello
   <p>article_name: <?php echo htmlspecialchars($_GET['article_name']); ?></p>
   <p>article_topic: <?php echo htmlspecialchars($_GET['article_topic']); ?></p>
   <p>comment: <?php echo htmlspecialchars($_GET['comment']); ?></p>
+	<p>weight: <?php echo htmlspecialchars($_GET['weight']); ?>  </p>
   <p>mytext: <?php echo htmlspecialchars($_GET['mytext']); ?></p>
   <p>color (<?php echo htmlspecialchars($_GET['color']); ?>) : <span style="background-color: <?php echo htmlspecialchars($_GET['color']); ?>;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
   
@@ -25,9 +28,10 @@ Hello
   
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
+	</div>
 
   <?php if (!isset($_GET['submitted'])) { ?>
-  <div style="border: red solid 5px">
+  <div style="border: red solid 5px;">
   <h1>Play with the HTML form</h1>
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
@@ -70,6 +74,12 @@ Hello
     
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
+	   <br>
+	  
+	<div>  
+	  <label for="my-range">Закругление</label>       <p>0px<input id="my-range" name="weight" type="range" min="0" max="50">50px</p>
+	  
+	  </div>
 	  
 	  </div>
 	  
