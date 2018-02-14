@@ -33,7 +33,7 @@ Hello
   <?php if (!isset($_GET['submitted'])) { ?>
   <div style="border: red solid 5px;">
   <h1>Play with the HTML form</h1>
-  <form action="/index.php">
+  <form action="/index.php" method="GET">
     <input type="hidden" name="submitted" value="yes">
     <p>
       <label for="my-radio-yes">radio Yes: </label>
