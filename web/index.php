@@ -11,6 +11,18 @@ Hello
   <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
+  
+  
+  <p>radio: <?php echo htmlspecialchars($_GET['article_name']); ?></p>
+  <p>radio: <?php echo htmlspecialchars($_GET['article_topic']); ?></p>
+  <p>radio: <?php echo htmlspecialchars($_GET['comment']); ?></p>
+  <p>radio: <?php echo htmlspecialchars($_GET['mytext']); ?></p>
+  <p>radio: <?php echo htmlspecialchars($_GET['color']); ?></p>
+  
+  
+  
+  
+  
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
 
@@ -47,9 +59,11 @@ Hello
     <div><label for="my-checkbox" class="ch"> Разрешить комментарии:</label> <input name="comment" id="my-checkbox" type="checkbox" checked></div>  
     <br>
     
-    <div><label for="my-textarea"> Текст статьи:</label><br><textarea name='mytext' id="my-textarea"></textarea></div>     
+    <div><label for="my-textarea" > Текст статьи:</label><br><textarea name='mytext' id="my-textarea"></textarea></div>     
     <br>
     
+    <label for="my-color">color: </label>
+			<input id="my-color" name="color" type="color">
     
     <br>
     
