@@ -25,6 +25,35 @@ Hello
       <label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
     <br>
+    
+    <div>
+ <label>Название статьи:</label>
+           <input class="article_name" type=text name='article_name' >
+</div>
+    
+    <br>
+    
+    <div><label for="my-select">Рубрика:</label>
+                                                       <select id="my-select" name='article_topic' size="1" required>
+                                                        <option value="">---------</option>
+                                                        <option value="kt">компьютерная техника</option>
+                                                        <option value="g-d">графика и дизайн</option>
+                                                        <option value="p" selected>программирование</option>
+                                                     </select></div>
+
+    
+    <br>
+    
+    <div><label for="my-checkbox" class="ch"> Разрешить комментарии:</label> <input name="comment" id="my-checkbox" type="checkbox" checked></div>  
+    <br>
+    
+    <div><label for="my-textarea"> Текст статьи:</label><br><textarea name='mytext' id="my-textarea"></textarea></div>     
+    <br>
+    
+    
+    <br>
+    
+    
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
   </form>
